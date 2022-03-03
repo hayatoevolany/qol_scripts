@@ -1,0 +1,12 @@
+# use applescripts to open prerelease environments with iterm
+alias prenative="/Users/$(whoami)/qol_scripts/native_prerelease.applescript"
+alias prephp="/Users/$(whoami)/qol_scripts/php_prerelease.applescript"
+alias prelua="/Users/$(whoami)/qol_scripts/lua_prerelease.applescript"
+
+# open anybot repositories
+alias ab="code /Users/$(whoami)/Evolany/anybot"
+alias ab-lua="code /Users/$(whoami)/Evolany/anybot-lua"
+alias ab-native="code /Users/$(whoami)/Evolany/anybot-native"
+
+# Check folder contents
+alias l="ls -al"
