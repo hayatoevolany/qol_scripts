@@ -10,3 +10,13 @@ alias ab-native="code /Users/$(whoami)/Evolany/anybot-native"
 
 # Check folder contents
 alias l="ls -al"
+
+# Open the qol_scripts repo
+alias qol="code /Users/$(whoami)/qol_scripts"
+
+# Open the .aliases file
+alias aliases="code /Users/$(whoami)/.aliases"
+
+# Open the .zshrc file
+alias zshrc="code /Users/$(whoami)/.zshrc"
+
