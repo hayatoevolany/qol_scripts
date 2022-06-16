@@ -1,7 +1,7 @@
 # Run this the first time to set your aliases. 
 
 # Exit if aliases file in this folder (i.e. if we already ran this)
-return if Dir["#{Dir.pwd}/.aliases"].length === 0 || Dir["#{Dir.home}/.aliases"] > 0
+return if Dir["#{Dir.pwd}/.aliases"].length === 0 || Dir["#{Dir.home}/.aliases"].length > 0
 
 require 'fileutils'
 # Move the .aliases file from this folder to your home directory
