@@ -12,12 +12,12 @@ tell application "iTerm"
 
     -- Left tab (editing window 1)
     tell first session of current tab of current window
-        write text "ssh -t -t td_jump sudo ssh tiedyprodtemp tail -f /tmp/lua_error.log"
+        write text "ssh -t -t td_jump sudo ssh tiedyprod"
     end tell
 
     -- Right tab (editing window 2)
     tell second session of current tab of current window
-        write text "ssh -t -t td_jump sudo ssh tiedyprodtemp"
+        write text "ssh -t -t td_jump sudo ssh tiedyprod tail -f /tmp/lua_error.log"
     end tell
 
 end tell
