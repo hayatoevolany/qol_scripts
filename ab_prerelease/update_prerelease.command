@@ -22,18 +22,18 @@
 hosts=(
     # # ---- Update these frequently ----
 
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prerelease1 sh /root/update.sh"
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prerelease2 sh /root/update.sh"
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prereleaselua1 sh /root/update_lua_noerror.sh"
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prereleaselua2 sh /root/update_lua_noerror.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prerelease1 sh /root/update.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prerelease2 sh /root/update.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleaselua1 sh /root/update_lua_noerror.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleaselua2 sh /root/update_lua_noerror.sh"
 
 
 
     # # ---- These don't need to be updated that often ----
 
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prereleasesns1 sh /root/update_sns.sh"
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prereleasesocket1 sh /root/update_socket.sh"
-    "ssh -t -t centos@52.194.115.183 -p32000 -i~/.ssh/anybot.pem sudo ssh prereleasebatch1 sh /root/update.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleasesns1 sh /root/update_sns.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleasesocket1 sh /root/update_socket.sh"
+    "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleasebatch1 sh /root/update.sh"
 )
 
 # Check if we have any hosts to update.
