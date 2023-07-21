@@ -22,25 +22,25 @@ tell application "iTerm"
         -- Top Left tab (editing window 1)
         set counter to (counter + 1)
         tell first session of current tab of current window
-            write text "ssh -t -t bot_jump sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
+            write text "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
         end tell
 
         -- Bottom Left tab (log 1)
         set counter to (counter + 1)
         tell second session of current tab of current window
-            write text "ssh -t -t bot_jump sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
+            write text "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
         end tell
 
         -- Top Right tab (editing window 2)
         set counter to (counter + 1)
         tell third session of current tab of current window
-            write text "ssh -t -t bot_jump sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
+            write text "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
         end tell
 
         -- Bottom Right tab (log 2)
         set counter to (counter + 1)
         tell fourth session of current tab of current window
-            write text "ssh -t -t bot_jump sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
+            write text "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh anybotap" & counter & " tail -f /var/log/nginx/php_error.log"
         end tell
     end repeat
 end tell

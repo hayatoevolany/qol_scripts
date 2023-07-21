@@ -23,16 +23,16 @@ tell application "iTerm"
 
     -- Bottom Left tab (log 1)
     tell second session of current tab of current window
-        write text "ssh -t -t bot_jump sudo ssh prereleasebc1 tail -f /tmp/lua_error.log"
+        write text "ssh -t -t bot_jump sudo ssh prereleasebc1 tail -f /var/log/nginx/lua_error.log"
     end tell
 
-    -- -- Top Right tab (editing window 2)
-    -- tell third session of current tab of current window
-    --     write text "ssh -t -t bot_jump sudo ssh prereleasebc2"
-    -- end tell
+    -- Top Right tab (editing window 2)
+    tell third session of current tab of current window
+        write text "ssh -t -t bot_jump sudo ssh prereleasebc2"
+    end tell
 
-    -- -- Bottom Right tab (log 2)
-    -- tell fourth session of current tab of current window
-    --     write text "ssh -t -t bot_jump sudo ssh prereleasebc2 tail -f /tmp/lua_error.log"
-    -- end tell
+    -- Bottom Right tab (log 2)
+    tell fourth session of current tab of current window
+        write text "ssh -t -t bot_jump sudo ssh prereleasebc2 tail -f /var/log/nginx/lua_error.log"
+    end tell
 end tell

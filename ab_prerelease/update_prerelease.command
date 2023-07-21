@@ -12,12 +12,6 @@
 
 # --------------- README -----------------------
 
-
-
-
-
-
-
 # Uncomment the update scripts that you want to use.
 hosts=(
     # # ---- Update these frequently ----
@@ -26,8 +20,6 @@ hosts=(
     "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prerelease2 sh /root/update.sh"
     "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleaselua1 sh /root/update_lua_noerror.sh"
     "ssh -t -t centos@52.194.115.183 -p32000 -i ~/.ssh/evolany_hayato sudo ssh prereleaselua2 sh /root/update_lua_noerror.sh"
-
-
 
     # # ---- These don't need to be updated that often ----
 
